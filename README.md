@@ -3,20 +3,29 @@
 ### Problem Statement
 
 With the advancement in IOT, sensors analytics have played a huge role in day to day activities. Sudden spike in the availability and usage of smart watches is a great example for this. Application of sensors analytics living beings to track their actions and vital signs has huge set of problem pool, namely – Calorie tracker, early warning for life threatening diseases, protection of endangered species, improve sports person’s abilities etc.
+
 The current problem can be considered as the base for all the above mentions applications of sensor analytics on living things. Certain experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz were captured. The experiments have been video-recorded to label the data manually. (http://www.youtube.com/watch?v=XOEN9W05_4A)
+
 As it can be seen in the video, different actions have unique patterns in the signals which were captured. Thus, the dataset can be used as a test bed to see the practical effect of all the clustering algorithms learned in Unsupervised L1 course.  Since data also has the target variable, y, thus it will be very helpful to compare the clustering results with the actual outcome, apart from standard cluster performance metrics like silhouette score etc.
 
 ### Tasks to do: -
 Combine all the walking activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS) as single activity and build a 4-cluster model and profile it.
+
 Build a 6-cluster model for all the activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) and profile it.
+
 Experiment with all the clustering techniques introduced in Unsupervised L1 course and K-Means.
 (Kindly divide the data into 70-30 train-test split to evaluate the cluster outcome with the target variable)
+
 Compare at least 3 clustering techniques based on the outcome and profiling.
+
 Number of features to be used is upto you and for every clustering technique used, the features used can differ. But you have to provide reasons for using those features in a particular model.
+
 Profiling a clustering model is nothing but extensive documentation about the process and the results. You can either create a document or a PowerPoint deck with following information for each model: -
-Train and test instance size
-Columns used and no. of models
-Parameters used
+
+-  Train and test instance size
+-  Columns used and no. of models
+-  Parameters used
+
 For the first 3 points, the reasons are also required
 Clustering performance evaluation metrics (https://scikit-learn.org/stable/modules/clustering.html#clustering-performance-evaluation)
 Since, luckily we have the target variable here, therefore Accuracy, Precision and Recall scores too apart from the performance evaluation metrics mentioned above.
@@ -24,6 +33,7 @@ The inference made form the last 2 points are required
 
 ### Data Description
 As mentioned above, this is an experimental data. The data has 561 features, apart from the action label and the identifier for the subject on whom the experiment was conducted
+
 For each record it is provided: -
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope. 
